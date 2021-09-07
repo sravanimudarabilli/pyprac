@@ -29,6 +29,7 @@ with open('sample.json', 'r') as openfile:
     # Reading from json file
     json_object = json.load(openfile)
 
+
 #validating one by one against schema
 for x in json_object:
     def validateJson(x):
@@ -43,8 +44,12 @@ for x in json_object:
     if isValid:
         print(x)
         print("given data is valid")
+        with open('valid.json', 'a') as f:
+            json.dump(x, f)
         print("*************************")
     else:
         print(x)
+        with open('invalid.txt', 'a') as fi:
+            json.dump(x, fi)
         print("given data is invalid")
         print("**************************")
