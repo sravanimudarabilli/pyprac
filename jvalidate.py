@@ -36,6 +36,14 @@ for x in json_object:
         try:
             validate(instance=x, schema=employeeSchema)
         except jsonschema.exceptions.ValidationError as err:
+            a=str(err)
+            with open('invalid.txt', 'a') as fi:
+                json.dump(x, fi)
+                fi.writelines(a)
+                #fi.write("********")
+
+
+
             print("invalid json", err)
             return False
         return True
@@ -49,7 +57,6 @@ for x in json_object:
         print("*************************")
     else:
         print(x)
-        with open('invalid.txt', 'a') as fi:
-            json.dump(x, fi)
+
         print("given data is invalid")
         print("**************************")

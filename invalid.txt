@@ -1,1 +1,43 @@
-{"name": "harshini", "id": 25, "mail": "hari@gmail.com"}{"name": "harshini", "id": 25, "mail": "hari@gmail.com"}{"name": "harshini", "id": 25, "mail": "hari@gmail.com"}
+{"name": "harshini", "id": 25, "mail": "hari@gmail.com"}'harshini' is too long
+
+Failed validating 'maxLength' in schema['properties']['name']:
+    {'maxLength': 7,
+     'minLength': 1,
+     'pattern': '[A-Za-z]',
+     'type': 'string'}
+
+On instance['name']:
+    'harshini'{"name": "dhruv", "id": 400, "mail": "dhruv23@gmail.com"}400 is greater than the maximum of 200
+
+Failed validating 'maximum' in schema['properties']['id']:
+    {'maximum': 200, 'minimum': 4, 'type': 'integer'}
+
+On instance['id']:
+    400{"name": "mihikA", "id": 75, "mail": "Mihik@3@gmail.com"}'Mihik@3@gmail.com' does not match '^[A-Za-z0-9]*@gmail.com$'
+
+Failed validating 'pattern' in schema['properties']['mail']:
+    {'pattern': '^[A-Za-z0-9]*@gmail.com$', 'type': 'string'}
+
+On instance['mail']:
+    'Mihik@3@gmail.com'{"name": "harshini", "id": 25, "mail": "hari@gmail.com"}'harshini' is too long
+
+Failed validating 'maxLength' in schema['properties']['name']:
+    {'maxLength': 7,
+     'minLength': 1,
+     'pattern': '[A-Za-z]',
+     'type': 'string'}
+
+On instance['name']:
+    'harshini'********{"name": "dhruv", "id": 400, "mail": "dhruv23@gmail.com"}400 is greater than the maximum of 200
+
+Failed validating 'maximum' in schema['properties']['id']:
+    {'maximum': 200, 'minimum': 4, 'type': 'integer'}
+
+On instance['id']:
+    400********{"name": "mihikA", "id": 75, "mail": "Mihik@3@gmail.com"}'Mihik@3@gmail.com' does not match '^[A-Za-z0-9]*@gmail.com$'
+
+Failed validating 'pattern' in schema['properties']['mail']:
+    {'pattern': '^[A-Za-z0-9]*@gmail.com$', 'type': 'string'}
+
+On instance['mail']:
+    'Mihik@3@gmail.com'********
